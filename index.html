@@ -13,28 +13,25 @@
 <script type="text/javascript" src="https://polkadot.network/assets/js/prevent.framing.js?v=2d5c425d8d"></script>
 
   <!-- styles -->
-  <link href="https://polkadot.network/assets/css/aos.css?v=2d5c425d8d" rel="stylesheet" type="text/css" media="all">
-  <link href="https://polkadot.network/assets/css/material-icons.css?v=2d5c425d8d" rel="stylesheet" type="text/css" media="all">
-  <link href="https://polkadot.network/assets/css/custom.css?v=2d5c425d8d" rel="stylesheet" type="text/css" media="all">
+  <link href="assets/css/custom.css" rel="stylesheet" type="text/css" media="all">
 
-  
 
   <meta name="description" content="Polkadot empowers blockchain networks to work together under the protection of shared security." />
     <link rel="icon" href="/favicon.png" type="image/png" />
     <link rel="canonical" href="https://polkadot.network/" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
     
-    <meta property="og:site_name" content="Polkadot Network" />
+    <meta property="og:site_name" content="Credx Blockchain" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Polkadot Network" />
+    <meta property="og:title" content="Credx Blockchain" />
     <meta property="og:description" content="Polkadot empowers blockchain networks to work together under the protection of shared security." />
-    <meta property="og:url" content="https://polkadot.network/" />
-    <meta property="og:image" content="https://polkadot.network/content/images/2021/12/Polkadot_OG-1.png" />
+    <meta property="og:url" content="#" />
+    <meta property="og:image" content="#" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Polkadot Network" />
+    <meta name="twitter:title" content="Credx Blockchain" />
     <meta name="twitter:description" content="Polkadot empowers blockchain networks to work together under the protection of shared security." />
-    <meta name="twitter:url" content="https://polkadot.network/" />
-    <meta name="twitter:image" content="https://polkadot.network/content/images/2021/12/Polkadot_OG.png" />
+    <meta name="twitter:url" content="#" />
+    <meta name="twitter:image" content="#" />
     <meta name="twitter:site" content="@polkadotnetwork" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="627" />
@@ -104,28 +101,6 @@
       <div class="container">
         <div class="collapse navbar-collapse navMenu justify-content-between">
           <div class="d-flex justify-content-end justify-content-lg-start pt-1 pt-md-0 order-2 order-lg-1">
-            <div class="dropdown dropdown-lng-choice">
-              <button class="btn dropdown-toggle btn-lng-choice mb-1 mb-lg-0" type="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <span class="lng text-uppercase">en</span>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item lng-choice" data-lng="en" href="/">English</a>
-                <a class="dropdown-item lng-choice" data-lng="es" href="/es/">español</a>
-                <a class="dropdown-item lng-choice" data-lng="zh-cn" href="/zh-cn/">中文</a>
-                <a class="dropdown-item lng-choice" data-lng="ja" href="/ja/">日本語</a>
-                <a class="dropdown-item lng-choice" data-lng="ko" href="/ko/">한국어</a>
-                <a class="dropdown-item lng-choice" data-lng="ru" href="/ru/">русский</a>
-                <a class="dropdown-item lng-choice" data-lng="tr" href="/tr/">Türkçe</a>
-              </div>
-              <script>
-                var lng = document.querySelector('.lng').innerHTML;
-                document.querySelectorAll('.lng-choice').forEach(function (lngChoice) {
-                  if (lngChoice.dataset.lng === lng)
-                    lngChoice.parentNode.removeChild(lngChoice);
-                });
-              </script>
-            </div>
           </div>
           <div class="py-1 d-flex flex-wrap align-items-center justify-content-between justify-content-lg-end order-1 order-lg-2">
             <ul class="navbar-nav d-flex flex-row">
@@ -147,9 +122,9 @@
               <li class="nav-item"><a href="https://wiki.polkadot.network" target="_blank" class="text-small nav-link px-2 mr-2 font-weight-bold">Wiki</a></li>
             </ul>
             <ul class="list-social-links navbar-nav d-none d-lg-flex flex-row">
-              <li><a href="https://github.com/paritytech/polkadot" target="_blank" class="text-dark"><i class="socicon-github"></i></a></li>
-              <li><a href="https://discord.gg/wGUDt2p" target="_blank" class="text-dark"><i class="socicon-discord"></i></a></li>
-              <li><a href="https://twitter.com/Polkadot" target="_blank" class="text-dark"><i class="socicon-twitter"></i></a></li>
+              <li><a href="https://github.com/paritytech/polkadot" target="_blank" class="text-dark"><img src="assets/img/github.png" width="15px" height="10px"></a></li>
+              <li><a href="https://discord.gg/wGUDt2p" target="_blank" class="text-dark"><img src="assets/img/discord.png" width="15px" height="10px"></a></li>
+              <li><a href="https://twitter.com/Polkadot" target="_blank" class="text-dark"><img src="assets/img/twitter.png" width="15px" height="10px"></a></li>
               <li><a id="support-link" href="https://support.polkadot.network" target="_blank" class="text-dark font-weight-bold">Support</a></li>
             </ul>
           </div>
@@ -158,9 +133,8 @@
     </nav>
     <nav class="navbar navbar--primary navbar-expand-lg navbar-light bg-white">
       <div class="container">
-        <a class="navbar-brand" href="/">
-          <img class="logo header-logo-dark" alt="Polkadot" src="https://polkadot.network/assets/img/logo-polkadot.svg?v=2d5c425d8d">
-          <img class="logo header-logo-light" alt="Polkadot" src="https://polkadot.network/assets/img/logo-polkadot-light.svg?v=2d5c425d8d" style="display: none">
+        <a class="navbar-brand" href="/" style="padding-top: 20px;">
+          <img class="logo header-logo-dark" alt="" src="assets/img/credx Black.png">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navMenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -191,8 +165,8 @@
           <div class="row pt-3 pt-md-5">
             <div class="col-12 col-md-6 col-lg-5 mb-4 d-flex flex-column justify-content-center">
               <h1 class="display-3 font-weight-bold text-center text-md-left" style="font-size: 100px;">People Powered <br> Networks.</h1>
-              <h1 class="lead text-center text-md-left" style="color: rgb(242, 12, 188); font-size: 30px;">Start a Decentralized Revolution</h1>
-              <p class="lead text-center text-md-left">Powered by the Helium Blockchain, The People’s Network represents a paradigm shift for decentralized wireless infrastructure.</p>
+              <h1 class="lead text-center text-md-left" style="color: rgb(64,92,244); font-size: 30px;">Start a Decentralized Revolution</h1>
+              <p class="lead text-center text-md-left">Powered by the Credx Blockchain, The People’s Network represents a paradigm shift for decentralized wireless infrastructure.</p>
               <div class="d-none d-md-block justify-content-center mt-2">
                 <a href="https://substrate.io/ecosystem/square-one/" class="btn btn-primary btn-lg mr-2" target="_blank" rel="noopener noreferrer">Start Building</a>
                 <a href="https://wiki.polkadot.network/docs/build-hrmp-channels" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Open a Channel</a>
@@ -204,14 +178,14 @@
                   <div class="xcm-animation-img-wrapper" style="background-image: url(https://polkadot.network/assets/img/hero/xcm-animation-outer.svg?v=2d5c425d8d);"></div>
                 </div>
                 <div class="xcm-animation__item xcm-animation__item--outer" data-gleit='{"0vh": {"rotate": "0deg"}, "100vh": {"rotate": "-180deg"}}'>
-                  <div class="xcm-animation-img-wrapper" style="background-image: url(https://polkadot.network/assets/img/hero/xcm-animation-inner.png?v=2d5c425d8d)";></div>
+                  <div class="xcm-animation-img-wrapper" style="background-image: url(assets/img/innerblue.png)";></div>
                 </div>
               </div>
             </div>
             <div class="col-12 d-block d-md-none">
               <div class="text-center justify-content-center">
-                <a href="https://substrate.io/ecosystem/square-one/" class="btn btn-primary btn-lg m-1" target="_blank" rel="noopener noreferrer">Start Building</a>
-                <a href="https://wiki.polkadot.network/docs/build-hrmp-channels" class="btn btn-primary btn-lg m-1" target="_blank" rel="noopener noreferrer">Open a Channel</a>
+                <a href="#" class="btn btn-primary btn-lg m-1" target="_blank" rel="noopener noreferrer" style="border-color: rgb(64,92,244);">Start Building</a>
+                <a href="#" class="btn btn-primary btn-lg m-1" target="_blank" rel="noopener noreferrer" style="border-color: rgb(64,92,244);">Open a Channel</a>
               </div>
             </div>
           </div>
@@ -226,65 +200,66 @@
     <div class="row justify-content-center mb-4">
       <div class="col-12 col-md-6 col-lg-4 mb-4">
         <div class="text-center text-md-left">
-          <img src="https://polkadot.network/assets/img/icons/home-icon1.svg?v=2d5c425d8d" alt="" class="icon flex-shrink-0 mb-1">
+          <img src="assets/img/download.png" alt="" class="icon flex-shrink-0 mb-1">
           <div>
             <h5 class="h4 mb-2 mt-2 font-weight-bold text-center text-md-left">True interoperability</h5>
-            <p class="text-center text-md-left pr-md-2">Credx enables cross-blockchain transfers of any type of data or asset, not just tokens. Connecting to Cr gives you the ability to interoperate with a wide variety of blockchains in the Polkadot network.</p>
+            <p class="text-center text-md-left pr-md-2">Credx allows for the transfer of any type of data or asset across blockchains, not just tokens. Connecting to Credx allows you to interact with a wide range of blockchains in the Credx network.</p>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 mb-4">
         <div class="text-center text-md-left">
-          <img src="https://polkadot.network/assets/img/icons/home-icon2.svg?v=2d5c425d8d" alt="" class="icon flex-shrink-0 mb-1">
+          <img src="assets/img/home-icon2.png" alt="" class="icon flex-shrink-0 mb-1">
           <div>
             <h5 class="h4 mb-2 mt-2 font-weight-bold text-center text-md-left">Economic & transactional scalability</h5>
-            <p class="text-center text-md-left pr-md-2">Polkadot provides unprecedented economic scalability by enabling a common set of validators to secure multiple blockchains. Polkadot provides transactional scalability by spreading transactions across multiple parallel blockchains.</p>
+            <p class="text-center text-md-left pr-md-2">Credx enables unprecedented economic scalability by utilising a single set of validators to secure multiple blockchains. Credx allows for transactional scalability by distributing transactions across multiple parallel blockchains.</p>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 mb-4">
         <div class="text-center text-md-left">
-          <img src="https://polkadot.network/assets/img/icons/home-icon3.svg?v=2d5c425d8d" alt="" class="icon flex-shrink-0 mb-1">
+          <img src="assets/img/home-icon3.png" alt="" class="icon flex-shrink-0 mb-1">
           <div>
             <h5 class="h4 mb-2 mt-2 font-weight-bold text-center text-md-left">Easy blockchain innovation</h5>
-            <p class="text-center text-md-left pr-md-2">Create a custom blockchain in minutes using the <a target="_blank" href="https://www.substrate.io" class="text-underline">Substrate</a> framework. Connect your chain to Polkadot and get interoperability and security from day one. This ease of development helps Polkadot's network grow.
+            <p class="text-center text-md-left pr-md-2">Connect your chain to Credx and enjoy interoperability and security right away. Credx's network grows as a result of this ease of development.
             </p>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 mb-4">
         <div class="text-center text-md-left">
-          <img src="https://polkadot.network/assets/img/icons/home-icon4-b.svg?v=2d5c425d8d" alt="" class="icon flex-shrink-0 mb-1">
+          <img src="assets/img/home-icon4.png" alt="" class="icon flex-shrink-0 mb-1">
           <div>
             <h5 class="h4 mb-2 mt-2 font-weight-bold text-center text-md-left">High energy efficiency</h5>
-            <p class="text-center text-md-left pr-md-2">Polkadot consumes a small fraction of the energy used by conventional blockchains thanks to its next-generation nominated proof-of-stake (NPoS) model. Using the equivalent of ~6.6 US households worth of energy per year, Polkadot has the <a href="https://www.bloomberg.com/news/articles/2022-02-02/polkadot-has-smallest-carbon-footprint-crypto-researcher-says" class="text-underline" target="_blank" rel="noreferrer noopener">lowest carbon footprint</a> among proof-of-stake protocols analyzed in <a href="https://www.carbon-ratings.com/dl/pos-report-2022" target="_blank" class="text-underline" rel="noreferrer noopener">recent research</a>.</p>
+            <p class="text-center text-md-left pr-md-2">Credx uses a fraction of the energy that traditional blockchains do due to its next-generation nominated proof-of-stake (NPoS) model. Credx has the lowest carbon footprint among proof-of-stake protocols studied in recent research, using the equivalent of 6.6 US households' worth of energy per year.</a>.</p>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 mb-4">
         <div class="text-center text-md-left">
-          <img src="https://polkadot.network/assets/img/icons/home-icon5.svg?v=2d5c425d8d" alt="" class="icon flex-shrink-0 mb-1">
+          <img src="assets/img/home-icon5 (1).png" alt="" class="icon flex-shrink-0 mb-1">
           <div>
             <h5 class="h4 mb-2 mt-2 font-weight-bold text-center text-md-left">Security for everyone</h5>
-            <p class="text-center text-md-left pr-md-2">Polkadot's novel data availability and validity scheme allows chains to interact with each other in a meaningful way. Chains remain independent in their governance, but united in their security.</p>
+            <p class="text-center text-md-left pr-md-2">Credx uses a fraction of the energy that traditional blockchains do due to its next-generation nominated proof-of-stake (NPoS) model. Credx has the lowest carbon footprint among proof-of-stake protocols studied in recent research, using the equivalent of 6.6 US households' worth of energy per year.
+            </p>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 mb-4">
         <div class="text-center text-md-left">
-          <img src="https://polkadot.network/assets/img/icons/home-icon6.svg?v=2d5c425d8d" alt="" class="icon flex-shrink-0 mb-1">
+          <img src="assets/img/home-icon6.png" alt="" class="icon flex-shrink-0 mb-1">
           <div>
             <h5 class="h4 mb-2 mt-2 font-weight-bold text-center text-md-left">User-driven governance</h5>
-            <p class="text-center text-md-left pr-md-2">Polkadot has a sophisticated governance system where all stakeholders have a voice. Network upgrades are coordinated on-chain and enacted autonomously and without forking the network, ensuring that Polkadot’s development remains future-proof and community-driven.</p>
+            <p class="text-center text-md-left pr-md-2">Credx has an advanced governance system in which all stakeholders have a say. Credx's development is future-proof and community-driven because network upgrades are coordinated on-chain and carried out autonomously and without forking the network.</p>
           </div>
         </div>
       </div>
     </div>
     <div class="row justify-content-center pt-3">
       <div class="col col-12 col-md-6 text-center">
-        <span class="h2 d-block mb-4">Learn more about Polkadot's technology</span>
+        <span class="h2 d-block mb-4">Learn more about Credx's technology</span>
         <a class="btn btn-primary btn-lg"
-          href="/technology">Discover Polkadot</a>
+          href="/technology">Discover Credx</a>
       </div>
     </div>
   </div>
@@ -293,7 +268,7 @@
   <div class="container">
     <div class="row text-center justify-content-center">
       <div class="col-12 col-sm-8 col-lg-9 pb-3 pb-sm-0">
-        <span class="h1 text-white font-weight-bold">Powering the Polkadot network</span>
+        <span class="h1 text-white font-weight-bold">Powering the Credx network</span>
         <p class="lead text-white mt-4 mb-0">
           The DOT token serves three distinct purposes: <br class="d-none d-xl-block">governance over the network, staking and bonding.
         </p>
@@ -311,8 +286,9 @@
           </div>
           <div class="card-body">
             <div>
-              <span class="h4 text-white mb-2 d-block text-bold">Governance</span>
-              <p class="text-white">Polkadot token holders have complete control over the protocol. All privileges, which on other platforms are exclusive to miners, will be given to the Relay Chain participants (DOT holders), including managing exceptional events such as protocol upgrades and fixes.</p>
+              <span class="h4 text-white mb-2 d-block text-bold">Secure </span>
+              <p class="text-white">Credx uses a novel hybrid Proof-of-Work/Proof-of-Stake system that layers security while carefully aligning incentives. This system combines the best of both worlds, making it far more difficult to attack than pure Proof-of-Work or pure Proof-of-Stake.
+            </p>
             </div>
           </div>
         </span>
@@ -324,8 +300,8 @@
           </div>
           <div class="card-body">
             <div>
-              <span class="h4 text-white mb-2 d-block text-bold">Staking</span>
-              <p class="text-white">Game theory incentivizes token holders to behave in honest ways. Good actors are rewarded by this mechanism whilst bad actors will lose their stake in the network. This ensures the network stays secure.</p>
+              <span class="h4 text-white mb-2 d-block text-bold">Adaptable </span>
+              <p class="text-white">Credx's built-in governance systems provide formal rights to its community to make consensus changes and manage project-level decisions. Credx is adaptable thanks to these systems, which allow it to evolve in accordance with the wishes of its stakeholders, resist forks, and incorporate new technology in the long run.</p>
             </div>
           </div>
         </span>
@@ -337,8 +313,8 @@
           </div>
           <div class="card-body">
             <div>
-              <span class="h4 text-white mb-2 d-block text-bold">Bonding</span>
-              <p class="text-white">New parachains are added by bonding tokens. Outdated or non-useful parachains are removed by removing bonded tokens. This is a form of proof of stake.</p>
+              <span class="h4 text-white mb-2 d-block text-bold">Sustainable</span>
+              <p class="text-white">Credx's treasury is continuously funded with 10% of each block reward, and it uses a flexible contractor model that allows contributors to be compensated for their work. Credx is thus a self-sustaining and self-funded Decentralized Autonomous Organization.</p>
             </div>
           </div>
         </span>
@@ -359,7 +335,7 @@
         <span class="h1 d-block text-white font-weight-bold">An open-source protocol built for everyone</span>
       </div>
       <div class="col-sm-12 col-lg-6">
-        <p class="lead text-white">Polkadot is an open-source project founded by the <a href="https://web3.foundation/" target="_blank" class="text-underline">Web3 Foundation</a>.</p>
+        <p class="lead text-white">Credx is an open-source project founded by the <a href="https://web3.foundation/" target="_blank" class="text-underline">Web3 Foundation</a>.</p>
         <p class="lead text-white">Web3 Foundation has commissioned five teams and over 100 developers to build Polkadot, including:</p>
       </div>
     </div>
@@ -390,7 +366,7 @@
       <div class="row">
         <div class="col-12 col-md-10" data-aos="fade-up">
           <p class="h1 display-4 text-white mb-4 font-weight-bold">Founded by some of the blockchain industry’s foremost builders</p>
-          <a href="/about" class="btn btn-primary btn-lg text-bold text-white">Learn About the Polkadot Team</a>
+          <a href="/about" class="btn btn-primary btn-lg text-bold text-white">Learn About the Credx Team</a>
         </div>
       </div>
     </div>
@@ -410,7 +386,7 @@
                 <img class="card-img-top" src="https://polkadot.network/content/images/2022/04/XCMv2--2-.png" alt="">
               </a>
               <div class="card-body py-3">
-                  <a href="/tag/polkadot/" class="mb-2 d-block">Polkadot</a>
+                  <a href="/tag/polkadot/" class="mb-2 d-block">Credx</a>
                 <a href="/blog/full-audit-of-xcmv2-completed-by-quarkslab/">
                   <h5>XCMv2 Audit Completed by Quarkslab</h5>
                 </a>
@@ -421,7 +397,7 @@
                 <div class="card-footer">
                   <div class="d-flex align-items-center">
                     <img src="https://polkadot.network/content/images/2021/12/ghost_avatar_polkadot.png" alt="" class="avatar mr-2">
-                    <span>Polkadot</span>
+                    <span>Credx</span>
                   </div>
                 </div>
             </div>
@@ -443,7 +419,7 @@
                 <div class="card-footer">
                   <div class="d-flex align-items-center">
                     <img src="https://polkadot.network/content/images/2021/12/ghost_avatar_polkadot.png" alt="" class="avatar mr-2">
-                    <span>Polkadot</span>
+                    <span>Credx</span>
                   </div>
                 </div>
             </div>
@@ -454,18 +430,18 @@
                 <img class="card-img-top" src="https://polkadot.network/content/images/2022/01/cover-image.png" alt="">
               </a>
               <div class="card-body py-3">
-                  <a href="/tag/polkadot/" class="mb-2 d-block">Polkadot</a>
+                  <a href="/tag/polkadot/" class="mb-2 d-block">Credx</a>
                 <a href="/blog/polkadot-v1-0-sharding-and-economic-security/">
-                  <h5>Polkadot v1.0: Sharding and Economic Security</h5>
+                  <h5>Credx v1.0: Sharding and Economic Security</h5>
                 </a>
                 <div>
-                  <p class="mb-0">This post is about the technology powering Polkadot. Polkadot is a sharded blockchain with heterogeneous shards....</p>
+                  <p class="mb-0">This post is about the technology powering Credx. Credx is a sharded blockchain with heterogeneous shards....</p>
                 </div>
               </div>
                 <div class="card-footer">
                   <div class="d-flex align-items-center">
                     <img src="https://polkadot.network/content/images/2021/12/ghost_avatar_polkadot.png" alt="" class="avatar mr-2">
-                    <span>Polkadot</span>
+                    <span>Credx</span>
                   </div>
                 </div>
             </div>
@@ -480,7 +456,7 @@
       <div class="col col-12 text-center">
         <span class="h1 d-block mb-4">Want to get involved?</span>
         <a class="btn btn-primary btn-lg" href="/community">Join the Community</a>
-        <span class="d-block mt-3 mt-3">or learn about how to <a href="/build" class="text-underline">build on Polkadot</a>.</span>
+        <span class="d-block mt-3 mt-3">or learn about how to <a href="/build" class="text-underline">build on Credx</a>.</span>
       </div>
     </div>
   </div>
@@ -613,13 +589,13 @@
         </div>
         <div class="col-12 col-lg-3 px-lg-0 mt-4 mt-lg-0">
           <ul class="list-social-links justify-content-start justify-content-lg-between mb-4 mb-md-5 mb-lg-4 mb-xl-3">
-            <li class="text-white mr-2 mr-lg-0"><a href="https://twitter.com/Polkadot" target="_blank"><i class="socicon-twitter"></i></a></li>
-            <li class="text-white mr-2 mr-lg-0"><a href="https://www.reddit.com/r/polkadot" target="_blank"><i class="socicon-reddit"></i></a></li>
-            <li class="text-white mr-2 mr-lg-0"><a href="https://github.com/paritytech/polkadot" target="_blank"><i class="socicon-github"></i></a></li>
-            <li class="text-white mr-2 mr-lg-0"><a href="https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw" target="_blank"><i class="socicon-youtube"></i></a></li>
-            <li class="text-white mr-2 mr-lg-0"><a href="https://discord.gg/wGUDt2p" target="_blank"><i class="socicon-discord"></i></a></li>
+            <li class="text-white mr-2 mr-lg-0"><a href="https://twitter.com/Polkadot" target="_blank"><img src="assets/img/twitterwhite.png" width="15px" height="10px"></a></li>
+            <li class="text-white mr-2 mr-lg-0"><a href="https://www.reddit.com/r/polkadot" target="_blank"><img src="assets/img/redditwhite.png" width="15px" height="10px"></a></li>
+            <li class="text-white mr-2 mr-lg-0"><a href="https://github.com/paritytech/polkadot" target="_blank"><img src="assets/img/githubwhite.png" width="15px" height="10px"></a></li>
+            <li class="text-white mr-2 mr-lg-0"><a href="https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw" target="_blank"><img src="assets/img/youtubewhite.png" width="15px" height="10px"></a></li>
+            <li class="text-white mr-2 mr-lg-0"><a href="https://discord.gg/wGUDt2p" target="_blank"><img src="assets/img/discordwhite.png" width="15px" height="10px"></a></li>
           </ul>
-          <p class="d-block text-white">Subscribe to the newsletter to hear about Polkadot updates and events.</p>
+          <p class="d-block text-white">Subscribe to the newsletter to hear about Credx updates and events.</p>
           <button class="btn btn-primary text-white d-block mb-1" data-toggle="modal" data-target="#subscribe-modal">Subscribe</button>
         </div>
       </div>
@@ -646,21 +622,7 @@
   </footer>
 
   <!-- dependencies -->
-  <script type="text/javascript" src="https://polkadot.network/assets/js/jquery.min.js?v=2d5c425d8d"></script>
-  <script type="text/javascript" src="https://polkadot.network/assets/js/popper.min.js?v=2d5c425d8d"></script>
-  <script type="text/javascript" src="https://polkadot.network/assets/js/prism.js?v=2d5c425d8d"></script>
-  <script type="text/javascript" src="https://polkadot.network/assets/js/smooth-scroll.polyfills.js?v=2d5c425d8d"></script>
-  <script type="text/javascript" src="https://polkadot.network/assets/js/scrollMonitor.js?v=2d5c425d8d"></script>
-  <script type="text/javascript" src="https://polkadot.network/assets/js/bootstrap.js?v=2d5c425d8d"></script>
-  <script type="text/javascript" src="https://polkadot.network/assets/js/clipboard.js?v=2d5c425d8d"></script>
-  <script type="text/javascript" src="https://polkadot.network/assets/js/jquery.countdown.min.js?v=2d5c425d8d"></script>
-  <script type="text/javascript" src="https://polkadot.network/assets/js/flickity.pkgd.min.js?v=2d5c425d8d"></script>
-  <script type="text/javascript" src="https://polkadot.network/assets/js/flickity-fade.js?v=2d5c425d8d"></script>
-  <script type="text/javascript" src="https://polkadot.network/assets/js/hash.js?v=2d5c425d8d"></script>
-  <script type="text/javascript" src="https://polkadot.network/assets/js/isotope.pkgd.min.js?v=2d5c425d8d"></script>
-  <script type="text/javascript" src="https://polkadot.network/assets/js/jquery.fancybox.min.js?v=2d5c425d8d"></script>
-  <script type="text/javascript" src="https://polkadot.network/assets/js/zoom.min.js?v=2d5c425d8d"></script>
-  <script type="text/javascript" src="https://polkadot.network/assets/js/aos.js?v=2d5c425d8d"></script>
+  
 
   <!-- Start of HubSpot Embed Code with Klaro script -->
   <script type="opt-in" data-type="application/javascript" id="hs-script-loader" data-src="//js.hs-scripts.com/7051618.js" data-name="hubSpot" async></script>
@@ -671,14 +633,7 @@
 	<noscript><img src="https://apisa.web3.foundation/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
 	<!-- End of simple analytics script -->
 
-  <!-- theme and custom theme -->
-  <script type="text/javascript" src="https://polkadot.network/assets/js/theme.js?v=2d5c425d8d"></script>
-
-  <!-- custom js -->
-  <script type="text/javascript" src="https://polkadot.network/assets/js/theme-custom.js?v=2d5c425d8d"></script>
-
-  <!-- Hero animation -->
-<script type="text/javascript" src="https://unpkg.com/gleit@1.0.1/dist/gleit.min.js"></script>
+  
 <script>
   window.addEventListener('load', function() {
     gleit.animate().on(gleit.verticalScroll());
