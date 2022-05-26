@@ -2,7 +2,7 @@
 <html lang="en" class="">
 
 <head>
-  <title>Technology | Polkadot</title>
+  <title>Technology | Credx</title>
   <meta name="description" content="">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -73,28 +73,6 @@
       <div class="container">
         <div class="collapse navbar-collapse navMenu justify-content-between">
           <div class="d-flex justify-content-end justify-content-lg-start pt-1 pt-md-0 order-2 order-lg-1">
-            <div class="dropdown dropdown-lng-choice">
-              <button class="btn dropdown-toggle btn-lng-choice mb-1 mb-lg-0" type="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <span class="lng text-uppercase">en</span>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item lng-choice" data-lng="en" href="/technology">English</a>
-                <a class="dropdown-item lng-choice" data-lng="es" href="/es/technology">español</a>
-                <a class="dropdown-item lng-choice" data-lng="zh-cn" href="/zh-cn/technology">中文</a>
-                <a class="dropdown-item lng-choice" data-lng="ja" href="/ja/technology">日本語</a>
-                <a class="dropdown-item lng-choice" data-lng="ko" href="/ko/technology">한국어</a>
-                <a class="dropdown-item lng-choice" data-lng="ru" href="/ru/technology">русский</a>
-                <a class="dropdown-item lng-choice" data-lng="tr" href="/tr/technology">Türkçe</a>
-              </div>
-              <script>
-                var lng = document.querySelector('.lng').innerHTML;
-                document.querySelectorAll('.lng-choice').forEach(function (lngChoice) {
-                  if (lngChoice.dataset.lng === lng)
-                    lngChoice.parentNode.removeChild(lngChoice);
-                });
-              </script>
-            </div>
           </div>
           <div class="py-1 d-flex flex-wrap align-items-center justify-content-between justify-content-lg-end order-1 order-lg-2">
             <ul class="navbar-nav d-flex flex-row">
@@ -116,9 +94,9 @@
               <li class="nav-item"><a href="https://wiki.polkadot.network" target="_blank" class="text-small nav-link px-2 mr-2 font-weight-bold">Wiki</a></li>
             </ul>
             <ul class="list-social-links navbar-nav d-none d-lg-flex flex-row">
-              <li><a href="https://github.com/paritytech/polkadot" target="_blank" class="text-dark"><i class="socicon-github"></i></a></li>
-              <li><a href="https://discord.gg/wGUDt2p" target="_blank" class="text-dark"><i class="socicon-discord"></i></a></li>
-              <li><a href="https://twitter.com/Polkadot" target="_blank" class="text-dark"><i class="socicon-twitter"></i></a></li>
+              <li><a href="https://github.com/paritytech/polkadot" target="_blank" class="text-dark"><img src="assets/img/github.png" width="15px" height="10px"></a></li>
+              <li><a href="https://discord.gg/wGUDt2p" target="_blank" class="text-dark"><img src="assets/img/discord.png" width="15px" height="10px"></a></li>
+              <li><a href="https://twitter.com/Polkadot" target="_blank" class="text-dark"><img src="assets/img/twitter.png" width="15px" height="10px"></a></li>
               <li><a id="support-link" href="https://support.polkadot.network" target="_blank" class="text-dark font-weight-bold">Support</a></li>
             </ul>
           </div>
@@ -140,7 +118,6 @@
             <li class="nav-item"><a class="nav-link h5" href="/community">Community</a></li>
             <li class="nav-item"><a class="nav-link h5" href="/about">About</a></li>
             <li class="nav-item"><a class="nav-link h5" href="/blog">Blog</a></li>
-            <li class="nav-item"><a class="nav-link h5" href="/build">Build</a></li>
             <li class="nav-item"><a class="nav-link h5" href="/contact">Contact</a></li>
           </ul>
         </div>
