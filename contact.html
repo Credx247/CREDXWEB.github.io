@@ -73,28 +73,6 @@
       <div class="container">
         <div class="collapse navbar-collapse navMenu justify-content-between">
           <div class="d-flex justify-content-end justify-content-lg-start pt-1 pt-md-0 order-2 order-lg-1">
-            <div class="dropdown dropdown-lng-choice">
-              <button class="btn dropdown-toggle btn-lng-choice mb-1 mb-lg-0" type="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <span class="lng text-uppercase">en</span>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item lng-choice" data-lng="en" href="/contact">English</a>
-                <a class="dropdown-item lng-choice" data-lng="es" href="/es/contact">español</a>
-                <a class="dropdown-item lng-choice" data-lng="zh-cn" href="/zh-cn/contact">中文</a>
-                <a class="dropdown-item lng-choice" data-lng="ja" href="/ja/contact">日本語</a>
-                <a class="dropdown-item lng-choice" data-lng="ko" href="/ko/contact">한국어</a>
-                <a class="dropdown-item lng-choice" data-lng="ru" href="/ru/contact">русский</a>
-                <a class="dropdown-item lng-choice" data-lng="tr" href="/tr/contact">Türkçe</a>
-              </div>
-              <script>
-                var lng = document.querySelector('.lng').innerHTML;
-                document.querySelectorAll('.lng-choice').forEach(function (lngChoice) {
-                  if (lngChoice.dataset.lng === lng)
-                    lngChoice.parentNode.removeChild(lngChoice);
-                });
-              </script>
-            </div>
           </div>
           <div class="py-1 d-flex flex-wrap align-items-center justify-content-between justify-content-lg-end order-1 order-lg-2">
             <ul class="navbar-nav d-flex flex-row">
@@ -116,9 +94,9 @@
               <li class="nav-item"><a href="https://wiki.polkadot.network" target="_blank" class="text-small nav-link px-2 mr-2 font-weight-bold">Wiki</a></li>
             </ul>
             <ul class="list-social-links navbar-nav d-none d-lg-flex flex-row">
-              <li><a href="https://github.com/paritytech/polkadot" target="_blank" class="text-dark"><i class="socicon-github"></i></a></li>
-              <li><a href="https://discord.gg/wGUDt2p" target="_blank" class="text-dark"><i class="socicon-discord"></i></a></li>
-              <li><a href="https://twitter.com/Polkadot" target="_blank" class="text-dark"><i class="socicon-twitter"></i></a></li>
+              <li><a href="https://github.com/paritytech/polkadot" target="_blank" class="text-dark"><img src="assets/img/github.png" width="15px" height="10px"></a></li>
+              <li><a href="https://discord.gg/wGUDt2p" target="_blank" class="text-dark"><img src="assets/img/discord.png" width="15px" height="10px"></a></li>
+              <li><a href="https://twitter.com/Polkadot" target="_blank" class="text-dark"><img src="assets/img/twitter.png" width="15px" height="10px"></a></li>
               <li><a id="support-link" href="https://support.polkadot.network" target="_blank" class="text-dark font-weight-bold">Support</a></li>
             </ul>
           </div>
@@ -128,8 +106,7 @@
     <nav class="navbar navbar--primary navbar-expand-lg navbar-light bg-white">
       <div class="container">
         <a class="navbar-brand" href="/">
-          <img class="logo header-logo-dark" alt="Polkadot" src="https://polkadot.network/assets/img/logo-polkadot.svg?v=2d5c425d8d">
-          <img class="logo header-logo-light" alt="Polkadot" src="https://polkadot.network/assets/img/logo-polkadot-light.svg?v=2d5c425d8d" style="display: none">
+          <img class="logo header-logo-dark" alt="" src="assets/img/credx Black.png">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navMenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -140,7 +117,6 @@
             <li class="nav-item"><a class="nav-link h5" href="/community">Community</a></li>
             <li class="nav-item"><a class="nav-link h5" href="/about">About</a></li>
             <li class="nav-item"><a class="nav-link h5" href="/blog">Blog</a></li>
-            <li class="nav-item"><a class="nav-link h5" href="/build">Build</a></li>
             <li class="nav-item"><a class="nav-link h5" href="/contact">Contact</a></li>
           </ul>
         </div>
@@ -156,7 +132,7 @@
     <div class="container">
       <div class="row text-center justify-content-center">
         <div class="col-md-12 col-lg-10 spacer-y-3">
-          <h1 class="display-4 text-dark">Get in touch with the Polkadot team</h1>
+          <h1 class="display-4 text-dark">Get in touch with the Credx team</h1>
         </div>
       </div>
     </div>
@@ -174,10 +150,10 @@
         <div class="card bg-white shadow-lg hover-effect card-pill rounded-lg">
           <div class="card-body py-2 pr-0">
             <div class="d-flex align-items-center">
-              <img src="https://polkadot.network/assets/img/logos/logo-circle-element.svg?v=2d5c425d8d" alt="" class="icon mr-3 flex-shrink-0">
+              <img src="assets/contact img/logo-circle-element (1).png" alt="" class="icon mr-3 flex-shrink-0">
               <div>
                 <h5 class="mb-1">For general chat</h5>
-                <p class="mb-0">Join the <a href="https://app.element.io/#/room/!FdCojkeGzZLSEoiecf:web3.foundation?via=matrix.parity.io&via=matrix.org&via=web3.foundation" target="_blank">Watercooler</a> or <a href="https://discord.gg/wGUDt2p" target="_blank">Discord</a></p>
+                <p class="mb-0">Join the Watercooler or Discord</a></p>
               </div>
             </div>
           </div>
@@ -187,10 +163,10 @@
         <div class="card bg-white shadow-lg hover-effect card-pill rounded-lg">
           <div class="card-body py-2 pr-0" style="cursor: pointer;" data-toggle="modal" data-target="#press-modal">
             <div class="d-flex align-items-center">
-              <img src="https://polkadot.network/assets/img/logos/logo-circle-newsletter.svg?v=2d5c425d8d" alt="" class="icon mr-3 flex-shrink-0">
+              <img src="assets/contact img/logo-circle-newsletter.png" alt="" class="icon mr-3 flex-shrink-0">
               <div>
                 <h5 class="mb-1">For press inquiries</h5>
-                <p class="mb-0">Please fill out <span class="text-primary">this</span> form</p>
+                <p class="mb-0">Please fill out this form</p>
               </div>
             </div>
           </div>
@@ -201,10 +177,10 @@
           <a href="https://support.polkadot.network" target="_blank" rel="noreferrer">
             <div class="card-body py-2 pr-0">
               <div class="d-flex align-items-center">
-                <img src="https://polkadot.network/assets/img/logos/logo-circle-chat.svg?v=2d5c425d8d" alt="" class="icon mr-3 flex-shrink-0">
+                <img src="assets/contact img/logo-circle-chat.png" alt="" class="icon mr-3 flex-shrink-0">
                 <div>
                   <h5 class="mb-1">For all other inquiries</h5>
-                  <p class="mb-0 text-primary">support.polkadot.network</p>
+                  <p class="mb-0">support.credx.network</p>
                 </div>
               </div>
             </div>
@@ -220,7 +196,7 @@
         </p>
       </div>
       <div class="col-sm-12 col-lg-6">
-        <span class="h4 text-white d-block">Join the teams building Polkadot</span>
+        <span class="h4 text-white d-block">Join the teams building Credx</span>
         <p class="lead text-white mt-2">See jobs at <a href="https://web3.bamboohr.com/jobs/" class="lead text-white text-underline" target="_blank">Web3 Foundation</a> or at <a href="https://www.parity.io/jobs" class="text-white text-underline" target="_blank">Parity Technologies</a></p>
       </div>
     </div>
@@ -235,8 +211,8 @@
           is="utm-link"
           href="https://info.polkadot.network/contact"
           target="_blank"
-          class="btn btn-primary btn-lg"
-        >
+          class="btn btn-lg"
+          style="background-color: transperent; color: rgb(64,92,244); border-color: rgb(64,92,244);">
           Let's Connect
         </a>
       </div>
@@ -335,7 +311,7 @@
   <footer class="spacer-y-4 bg-dark pb-4">
     <div class="container">
       <div class="row">
-        <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-0">
+        <div class="col-6 col-md-4 col-lg-4 mb-3 mb-md-0">
           <h5 class="text-white">General</h5>
           <ul class="list-unstyled">
             <li class="py-0 py-md-1"><a href="/about" class="text-white">About</a></li>
@@ -346,7 +322,7 @@
             <li class="py-0 py-md-1"><a href="/jobs" class="text-white">Careers</a></li>
           </ul>
         </div>
-        <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-0">
+        <div class="col-6 col-md-4 col-lg-4 mb-3 mb-md-0">
           <h5 class="text-white">Technology</h5>
           <ul class="list-unstyled">
             <li class="py-0 py-md-1"><a href="/technology" class="text-white">Technology</a></li>
@@ -358,7 +334,7 @@
             <li class="py-0 py-md-1"><a href="/PolkaDotPaper.pdf" class="text-white" target="_blank">Whitepaper</a></li>
           </ul>
         </div>
-        <div class="col-12 col-md-4 col-lg-2 col-xl-3 mb-3 mb-md-4 mb-lg-0">
+        <div class="col-12 col-md-4 col-lg-2 col-xl-4 mb-3 mb-md-4 mb-lg-0">
           <h5 class="text-white">Community</h5>
           <ul class="list-unstyled">
             <li class="py-0 py-md-1"><a href="/community" class="text-white">Community</a></li>
@@ -369,23 +345,9 @@
             <li class="py-0 py-md-1"><a href="https://medium.com/polkadot-network" target="_blank" class="text-white">Medium</a></li>
           </ul>
         </div>
-        <div class="col-12 col-lg-3 px-lg-0 mt-4 mt-lg-0">
-          <ul class="list-social-links justify-content-start justify-content-lg-between mb-4 mb-md-5 mb-lg-4 mb-xl-3">
-            <li class="text-white mr-2 mr-lg-0"><a href="https://twitter.com/Polkadot" target="_blank"><i class="socicon-twitter"></i></a></li>
-            <li class="text-white mr-2 mr-lg-0"><a href="https://www.reddit.com/r/polkadot" target="_blank"><i class="socicon-reddit"></i></a></li>
-            <li class="text-white mr-2 mr-lg-0"><a href="https://github.com/paritytech/polkadot" target="_blank"><i class="socicon-github"></i></a></li>
-            <li class="text-white mr-2 mr-lg-0"><a href="https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw" target="_blank"><i class="socicon-youtube"></i></a></li>
-            <li class="text-white mr-2 mr-lg-0"><a href="https://discord.gg/wGUDt2p" target="_blank"><i class="socicon-discord"></i></a></li>
-          </ul>
-          <p class="d-block text-white">Subscribe to the newsletter to hear about Polkadot updates and events.</p>
-          <button class="btn btn-primary text-white d-block mb-1" data-toggle="modal" data-target="#subscribe-modal">Subscribe</button>
-        </div>
       </div>
       <div class="row footer-legal align-items-end mt-4 mt-lg-5 pt-md-4">
         <div class="col-12 col-lg-2 mb-2 mb-lg-0">
-          <a class="navbar-brand" href="/">
-            <img class="logo" alt="Polkadot" src="https://polkadot.network/assets/img/logo-polkadot-light.svg?v=2d5c425d8d">
-          </a>
         </div>
         <div class="col-12 col-lg-10">
           <ul class="list-unstyled d-flex flex-wrap list-pipe-separator">
