@@ -35,12 +35,10 @@
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-
 *,
 *::before,
 *::after {
   box-sizing: border-box; }
-
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -2369,7 +2367,7 @@ fieldset:disabled a.btn {
   background-color: transparent; }
 
 .btn-link:hover {
-  color: #ae2881;
+  color: #372eee;
   text-decoration: none;
   background-color: transparent;
   border-color: transparent; }
@@ -8303,7 +8301,7 @@ body.compensate-for-scrollbar {
   overflow-y: auto; }
 
 .fancybox-bg {
-  background: #1e1e1e;
+  background: #405cf4;
   opacity: 0;
   transition-duration: inherit;
   transition-property: opacity;
@@ -8327,7 +8325,7 @@ body.compensate-for-scrollbar {
   visibility: visible; }
 
 .fancybox-infobar {
-  color: #ccc;
+  color: #405cf4;
   font-size: 13px;
   -webkit-font-smoothing: subpixel-antialiased;
   height: 44px;
@@ -8404,7 +8402,7 @@ body.compensate-for-scrollbar {
   padding: 44px 44px 0; }
 
 .fancybox-content {
-  background: #fff;
+  background: #405cf4;
   display: inline-block;
   margin: 0 0 6px;
   max-width: 100%;
@@ -8634,7 +8632,7 @@ body.compensate-for-scrollbar {
 
 .fancybox-caption {
   bottom: 0;
-  color: #fff;
+  color: #405cf4;
   font-size: 14px;
   font-weight: 400;
   left: 0;
@@ -8666,11 +8664,11 @@ body.compensate-for-scrollbar {
   top: 0; }
 
 .fancybox-caption a, .fancybox-caption a:link, .fancybox-caption a:visited {
-  color: #ccc;
+  color: #405cf4;
   text-decoration: none; }
 
 .fancybox-caption a:hover {
-  color: #fff;
+  color: #405cf4;
   text-decoration: underline; }
 
 .fancybox-loading {
@@ -8770,14 +8768,14 @@ body.compensate-for-scrollbar {
   transform: translateZ(0) scale(1); }
 
 .fancybox-share {
-  background: #f4f4f4;
+  background: #405cf4;
   border-radius: 3px;
   max-width: 90%;
   padding: 30px;
   text-align: center; }
 
 .fancybox-share h1 {
-  color: #222;
+  color: #405cf4;
   font-size: 35px;
   font-weight: 700;
   margin: 0 0 20px; }
@@ -8805,28 +8803,28 @@ body.compensate-for-scrollbar {
   white-space: nowrap; }
 
 .fancybox-share__button:link, .fancybox-share__button:visited {
-  color: #fff; }
+  color: #405cf4; }
 
 .fancybox-share__button:hover {
   text-decoration: none; }
 
 .fancybox-share__button--fb {
-  background: #3b5998; }
+  background: #405cf4; }
 
 .fancybox-share__button--fb:hover {
-  background: #344e86; }
+  background: #405cf4; }
 
 .fancybox-share__button--pt {
-  background: #bd081d; }
+  background: #405cf4; }
 
 .fancybox-share__button--pt:hover {
-  background: #aa0719; }
+  background: #405cf4; }
 
 .fancybox-share__button--tw {
-  background: #1da1f2; }
+  background: #405cf4; }
 
 .fancybox-share__button--tw:hover {
-  background: #0d95e8; }
+  background: #405cf4; }
 
 .fancybox-share__button svg {
   height: 25px;
@@ -8837,7 +8835,7 @@ body.compensate-for-scrollbar {
   width: 25px; }
 
 .fancybox-share__button svg path {
-  fill: #fff; }
+  fill: #405cf4; }
 
 .fancybox-share__input {
   background: transparent;
