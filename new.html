@@ -34,9 +34,37 @@
         </style>
     </head>
     <body>
-        <div class="centerdiv">
-            <a href=""><i class="fa fa-2x fa-facebook-f" style="color: blue;"></i></a>
+        <section class="urvi">
+            <a href=""><i class="fa fa-2x fa-facebook"></i></a>
             <a href=""><i class="fa fa-2x fa-instagram"></i></a>
-        </div>
+            <style>
+                .urvi{
+                    height: 100vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .urvi a{
+                    height: 70px;
+                    width: 70px;
+                    background-color: #f5f6fa;
+                    border-radius: 35px;
+                    text-align: center;
+                    align-items: center;
+                    margin: 10;
+                    line-height: 110px;
+                    box-shadow: 1px 4px 2px 2px #dcdde1;
+                }
+                .urvi a i{
+                    transition: all 0.3s linear;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                }
+                .urvi a:hover{
+                    transform: scale(1.4);
+                }
+            </style>
+        </section>
     </body>
 </html>
