@@ -3,7 +3,6 @@
 	<head>
         <!-- Title for the page -->
         <title> Support | Credx </title>
-
         <link href="assets/css/style.css" media="screen" rel="stylesheet" type="text/css">
 		<script src="https://kit.fontawesome.com/629632589e.js" crossorigin="anonymous"></script>
 	</head>
@@ -162,7 +161,7 @@
 				<li class="py-0 py-md-1"><a href="#" class="text-white">support@credx24.com</a></li>
 			  </ul>
 			  <div class="centerdiv">
-				<a href="https://www.facebook.com/CredXCoinOfficial" target="_blank"><i class="fa fa-facebook" style="color: white; font-size: 20px;"></i></a>
+				<a href="https://www.facebook.com/CredXCoinOfficial" target="_blank"><i class="fa fa-2x fa-facebook" style="color: white; font-size: 20px;"></i></a>
 				<a href="https://www.instagram.com/credx_official/?hl=en" target="_blank"><i class="fa fa-2x fa-instagram" style="color: white; font-size: 20px;"></i></a>
 				<a href="https://www.reddit.com/user/Credx_Blockchain/comments/v2et89/credx_blockchain_technology/" target="_blank"><i class="fa fa-2x fa-reddit" style="color: white; font-size: 20px;"></i></a>
 				<a href="https://twitter.com/CREDX_" target="_blank"><i class="fa fa-2x fa-twitter" style="color: white; font-size: 20px;"></i></a>
@@ -202,68 +201,6 @@
 	<script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="assets/js/zoom.min.js"></script>
 	<script type="text/javascript" src="assets/js/aos.js"></script>
-
-</div>
-
-<!-- Start of simple analytics script -->
-<script async defer src="https://apisa.web3.foundation/latest.js"></script>
-<noscript><img src="https://apisa.web3.foundation/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
-<!-- End of simple analytics script -->
-
-
-
-			<script src="https://assets8.freshdesk.com/assets/cdn/portal_bottom-0258959a15e8c9a595b712253c673847.js" type="text/javascript"></script>
-		<script src="https://assets8.freshdesk.com/assets/cdn/redactor-89e4016c5e19a3b700070d1f1b28d4ba.js" type="text/javascript"></script>
-		<script src="https://assets9.freshdesk.com/assets/cdn/lang/en-d58d68912364ea68a01bde932774f9dd.js" type="text/javascript"></script>
-		<!-- for i18n-js translations -->
-  		<script src="https://assets5.freshdesk.com/assets/cdn/i18n/portal/en-24017ed3590b997900e662a75cd64246.js" type="text/javascript"></script>
-		<!-- Including default portal based script at the bottom -->
-		<script type="text/javascript">
-//<![CDATA[
-	
-	jQuery(document).ready(function() {
-					
-		// Setting the locale for moment js
-		moment.lang('en');
-
-		var validation_meassages = {"required":"This field is required.","remote":"Please fix this field.","email":"Please enter a valid email address.","url":"Please enter a valid URL.","date":"Please enter a valid date.","dateISO":"Please enter a valid date ( ISO ).","number":"Please enter a valid number.","digits":"Please enter only digits.","creditcard":"Please enter a valid credit card number.","equalTo":"Please enter the same value again.","two_decimal_place_warning":"Value cannot have more than 2 decimal digits","select_atleast_one":"Select at least one option.","select2_minimum_limit":"Please type %{char_count} or more letters","select2_maximum_limit":"You can only select %{limit} %{container}","maxlength":"Please enter no more than {0} characters.","minlength":"Please enter at least {0} characters.","rangelength":"Please enter a value between {0} and {1} characters long.","range":"Please enter a value between {0} and {1}.","max":"Please enter a value less than or equal to {0}.","min":"Please enter a value greater than or equal to {0}.","select2_maximum_limit_jq":"You can only select {0} {1}","facebook_limit_exceed":"Your Facebook reply was over 8000 characters. You'll have to be more clever.","messenger_limit_exceeded":"Oops! You have exceeded Messenger Platform's character limit. Please modify your response.","not_equal_to":"This element should not be equal to","email_address_invalid":"One or more email addresses are invalid.","twitter_limit_exceed":"Oops! You have exceeded Twitter's character limit. You'll have to modify your response.","password_does_not_match":"The passwords don't match. Please try again.","valid_hours":"Please enter a valid hours.","reply_limit_exceed":"Your reply was over 2000 characters. You'll have to be more clever.","url_format":"Invalid URL format","url_without_slash":"Please enter a valid URL without '/'","link_back_url":"Please enter a valid linkback URL","requester_validation":"Please enter a valid requester details or <a href=\"#\" id=\"add_requester_btn_proxy\">add new requester.</a>","agent_validation":"Please enter valid agent details","email_or_phone":"Please enter a Email or Phone Number","upload_mb_limit":"Upload exceeds the available 15MB limit","invalid_image":"Invalid image format","atleast_one_role":"At least one role is required for the agent","invalid_time":"Invalid time.","remote_fail":"Remote validation failed","trim_spaces":"Auto trim of leading & trailing whitespace","hex_color_invalid":"Please enter a valid hex color value.","name_duplication":"The name already exists.","invalid_value":"Invalid value","invalid_regex":"Invalid Regular Expression","same_folder":"Cannot move to the same folder.","maxlength_255":"Please enter less than 255 characters","decimal_digit_valid":"Value cannot have more than 2 decimal digits","atleast_one_field":"Please fill at least {0} of these fields.","atleast_one_portal":"Select atleast one portal.","custom_header":"Please type custom header in the format -  header : value","same_password":"Should be same as Password","select2_no_match":"No matching %{container} found","integration_no_match":"no matching data...","time":"Please enter a valid time","valid_contact":"Please add a valid contact","field_invalid":"This field is invalid"}	
-
-		jQuery.extend(jQuery.validator.messages, validation_meassages );
-
-
-		jQuery(".call_duration").each(function () {
-			var format,time;
-			if (jQuery(this).data("time") === undefined) { return; }
-			if(jQuery(this).hasClass('freshcaller')){ return; }
-			time = jQuery(this).data("time");
-			if (time>=3600) {
-			 format = "hh:mm:ss";
-			} else {
-				format = "mm:ss";
-			}
-			jQuery(this).html(time.toTime(format));
-		});
-	});
-
-	// Shortcuts variables
-	var Shortcuts = {"global":{"help":"?","save":"mod+return","cancel":"esc","search":"/","status_dialog":"mod+alt+return","save_cuctomization":"mod+shift+s"},"app_nav":{"dashboard":"g d","tickets":"g t","social":"g e","solutions":"g s","forums":"g f","customers":"g c","reports":"g r","admin":"g a","ticket_new":"g n","compose_email":"g m"},"pagination":{"previous":"alt+left","next":"alt+right","alt_previous":"j","alt_next":"k"},"ticket_list":{"ticket_show":"return","select":"x","select_all":"shift+x","search_view":"v","show_description":"space","unwatch":"w","delete":"#","pickup":"@","spam":"!","close":"~","silent_close":"alt+shift+`","undo":"z","reply":"r","forward":"f","add_note":"n","scenario":"s"},"ticket_detail":{"toggle_watcher":"w","reply":"r","forward":"f","add_note":"n","close":"~","silent_close":"alt+shift+`","add_time":"m","spam":"!","delete":"#","show_activities_toggle":"}","properties":"p","expand":"]","undo":"z","select_watcher":"shift+w","go_to_next":["j","down"],"go_to_previous":["k","up"],"scenario":"s","pickup":"@","collaboration":"d"},"social_stream":{"search":"s","go_to_next":["j","down"],"go_to_previous":["k","up"],"open_stream":["space","return"],"close":"esc","reply":"r","retweet":"shift+r"},"portal_customizations":{"preview":"mod+shift+p"},"discussions":{"toggle_following":"w","add_follower":"shift+w","reply_topic":"r"}};
-	
-	// Date formats
-	var DATE_FORMATS = {"non_us":{"moment_date_with_week":"ddd, D MMM, YYYY","datepicker":"d M, yy","datepicker_escaped":"d M yy","datepicker_full_date":"D, d M, yy","mediumDate":"d MMM, yyyy"},"us":{"moment_date_with_week":"ddd, MMM D, YYYY","datepicker":"M d, yy","datepicker_escaped":"M d yy","datepicker_full_date":"D, M d, yy","mediumDate":"MMM d, yyyy"}};
-
-	var lang = { 
-		loadingText: "Please Wait...",
-		viewAllTickets: "View all tickets"
-	};
-
-
-//]]>
-</script> 
-		<script type="text/javascript">
-     		I18n.defaultLocale = "en";
-     		I18n.locale = "en";
-		</script>
-		
-    
+	</div>    
 	</body>
 </html>
