@@ -8,8 +8,7 @@
   <meta name="theme-color" content="#676767">
   <!-- styles -->
   <link href="assets/css/custom.css" rel="stylesheet" type="text/css" media="all"> 
-  
-  
+  <link href="assets/css/shiba.css" rel="stylesheet" type="text/css">
   <script src="https://kit.fontawesome.com/629632589e.js" crossorigin="anonymous"></script>
 </head>
 <body class="path_/">
@@ -161,108 +160,103 @@
       </div>
     </div>
   </section>
-  <section style="background-color: rgb(6, 6, 6);">
-    <div class="container">
-      <div class="row justify-content-center pt-3">
-        <div class="col col-12 col-md-6 text-center"> 
-          <span class="h2 d-block mb-4 text-white">Joining Link</span>
-          <div class="copy-text">
-              <input type="text" class="text" value="0xFADFEc3A713D6c15CB5e008d0DbD885bE1Af76FA">
-              <button class="float-end"><i class="fa-solid fa-copy"></i>  Copy to Clipboard</button>
+  <section style="background-color: black;">
+    <div id="community" class="section__com wf-section" style="background-color: black;">
+      <div class="container-1440">
+        <div class="com-wrap">
+          <h2 class="h1" style="color: white;">Contract Address</h2>
+          <div class="adress-wrap">
+            <div class="adress-left">
+              <input type="text" value="0xFADFEc3A713D6c15CB5e008d0DbD885bE1Af76FA" id="myInput" style="background-color: black; color: #fff; border-color: transparent;">
+              <div class="adress-hider"></div>
+            </div>
+            <div class="adress-right">
+              <div class="tooltip">
+                <button onclick="myFunction()" onmouseout="outFunc()" 
+                style=
+                "display: inline-block; 
+                font-weight: 700;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                border: 1px solid transparent;
+                padding: 0.3125rem 1rem;
+                font-size: 1rem;
+                line-height: 1.5;
+                border-radius: 0.25rem;
+                background-color: rgb(64,92,244);
+                transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;" >
+                  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                  <i class="fa-solid fa-copy"></i>  Copy Address
+                  </button>
+                </div>
+            </div>
           </div>
-        </div>
-      </div>    
-    </div>
-  <style>
-      .label{
-          padding: 10px;
-          font-size: 18px;
-          color: black;
-      }
-      .copy-text{
-          position: relative;
-          padding: 10px;
-          border-radius: 10px;
-          display: flex;
-          background: black;
-          border: 1px solid black;
-      }
-      .copy-text input.text{
-          padding: 10px;
-          font-size: 18px;
-          border: none;
-          outline: none;
-          background-color: black;
-          color: white;
-      }
-      .copy-text button{
-          padding: 10px;
-          background: black;
-          color: rgb(64,92,244);
-          font-size: 18px;
-          border-color: rgb(64,92,244);
-          outline: none;
-          border-radius: 10px;
-          cursor: pointer;
-      }
-      .copy-text button:hover{
-        background-color: rgb(64,92,244);
-        color: white;
-        text-decoration: none;
-      }
-      .copy-text button:before {
-          content:"copied";
-          position:absolute;
-          top: -50px;
-          right: 0px;
-          background: #5c81dc;
-          padding: 8px 10px;
-          border-radius: 20px;
-          font-size: 15px;
-          display: none;
-      }
-      .copy-text button:after {
-          content: "";
-          position: absolute;
-          top: -20px;
-          right: 25px;
-          width: 10px;
-          height: 10px;
-          background: #5c81dc;
-          transform: rotate(45deg);
-          display: none;
-          text-decoration: none;
-      }
-      .copy-text.active button:before,
-      .copy-text.active button:after{
-          display: block;
-      }
-  </style>
-  <script>
-      let copyText = document.querySelector(".copy-text");
-      copyText.querySelector("button").addEventListener("click",function(){
-          let input = copyText.querySelector("input.text");
-          input.select();
-          document.execCommand("copy");
-          copytext.classList.add("active");
-          window.getSelection().removeAllRanges();
-          setTimeout(function(){
-              copytext.classList.remove("active");
-          },2500); 
-      });
-  </script>
-  </section>
-  <section class="bg-dark pb-0">
-    <div class="container">
-      <div class="row text-center justify-content-center">
-        <div class="col-12 col-sm-8 col-lg-9 pb-3 pb-sm-0">
-          <span class="h1 text-white font-weight-bold">Powering the Credx network</span>
-          <p class="lead text-white mt-4 mb-0">
-            The Credx token serves three distinct purposes: <br class="d-none d-xl-block">governance over the network, staking and bonding.
-          </p>
         </div>
       </div>
     </div>
+    <style>
+      .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 140px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -75px;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      
+      .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+      
+      .address-right .tooltip button:hover{
+        background-color: #fff;
+      }
+      
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }
+      </style>
+      <script>
+        function myFunction() {
+          var copyText = document.getElementById("myInput");
+          copyText.setSelectionRange(0, 99999);
+          navigator.clipboard.writeText(copyText.value);
+          
+          var tooltip = document.getElementById("myTooltip");
+          tooltip.innerHTML = "Copied";
+        }
+        
+        function outFunc() {
+          var tooltip = document.getElementById("myTooltip");
+          tooltip.innerHTML = "Copy to clipboard";
+        }
+        </script>
   </section>
   <section class="bg-dark pt-0">
     <div class="container text-center">

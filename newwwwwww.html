@@ -1,0 +1,95 @@
+<html>
+    <body>
+        <section style="background-color: rgb(6, 6, 6);">
+            <div class="container">
+              <div class="row justify-content-center pt-3">
+                <div class="col col-12 col-md-6 text-center"> 
+                  <span class="h2 d-block mb-4 text-white">Joining Link</span>
+                  <div class="copy-text">
+                      <input type="text" class="text" value="0xFADFEc3A713D6c15CB5e008d0DbD885bE1Af76FA">
+                      <button class="float-end"><i class="fa-solid fa-copy"></i>  Copy to Clipboard</button>
+                  </div>  
+                </div>
+              </div>    
+            </div>
+          <style>
+              .copy-text{
+                  position: relative;
+                  padding: 10px;
+                  border-radius: 10px;
+                  display: flex;
+                  background: black;
+                  border: 1px solid black;
+              }
+              .copy-text input.text{
+                  padding: 10px;
+                  font-size: 18px;
+                  border: none;
+                  outline: none;
+                  background-color: black;
+                  color: white;
+              }
+              .copy-text button{
+                  padding: 10px;
+                  background: black;
+                  color: rgb(64,92,244);
+                  font-size: 18px;
+                  border-color: rgb(64,92,244);
+                  outline: none;
+                  border-radius: 10px;
+                  cursor: pointer;
+              }
+              .copy-text button:hover{
+                background-color: rgb(64,92,244);
+                color: white;
+                text-decoration: none;
+              }
+              .copy-text button:before {
+                  content:"copied";
+                  position:absolute;
+                  top: -50px;
+                  right: 0px;
+                  background: #5c81dc;
+                  padding: 8px 10px;
+                  border-radius: 20px;
+                  font-size: 15px;
+                  display: none;
+              }
+              .copy-text button:after {
+                  content: "";
+                  position: absolute;
+                  top: -20px;
+                  right: 25px;
+                  width: 10px;
+                  height: 10px;
+                  background: #5c81dc;
+                  transform: rotate(45deg);
+                  display: none;
+                  text-decoration: none;
+              }
+              .copy-text.active button:before,
+              .copy-text.active button:after{
+                  display: block;
+              }
+          </style>
+          <script>
+              let copyText = document.querySelector(".copy-text");
+              copyText.querySelector("button").addEventListener("click",function(){
+                  let input = copyText.querySelector("input.text");
+                  input.select();
+                  document.execCommand("copy");
+                  copytext.classList.add("active");
+                  window.getSelection().removeAllRanges();
+                  setTimeout(function(){
+                      copytext.classList.remove("active");
+                  },2500); 
+              });
+          </script>
+          </section>
+    </body>
+</html>
+
+
+
+
+
