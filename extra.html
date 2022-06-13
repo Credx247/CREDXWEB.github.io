@@ -8,8 +8,7 @@
   <meta name="theme-color" content="#676767">
   <!-- styles -->
   <link href="assets/css/custom.css" rel="stylesheet" type="text/css" media="all">
-  <link href="assets/css/shiba.css" rel="stylesheet" type="text/css" media="all"> 
-  
+  <link href="assets/css/shibaui.css" rel="stylesheet" type="text/css" media="all"> 
   
   <script src="https://kit.fontawesome.com/629632589e.js" crossorigin="anonymous"></script>
 </head>
@@ -162,102 +161,42 @@
       </div>
     </div>
   </section>
-  <div id="community" class="section__com wf-section bg-dark">
-    <div class="container-1440">
-      <div class="com-wrap">
-        <h2 class="h1" style="color: white;">Joining link</h2>
-        <div class="adress-wrap">
-          <div class="adress-left">
-            <input type="text" value="0xFADFEc3A713D6c15CB5e008d0DbD885bE1Af76FA" id="myInput">
-            <div class="adress-hider"></div>
-          </div>
-          <div class="adress-right">
-            <div class="tooltip">
-              <button onclick="myFunction()" onmouseout="outFunc()">
-                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-                Copy text
-                </button>
-              </div>
+  <section class="bg-dark pb-0">
+    <div id="community" class="section__com wf-section">
+      <div class="container-1440">
+        <div class="com-wrap">
+          <h2 class="h1 text-white">Contract Address</h2>
+          <div class="adress-wrap">
+            <div class="adress-left">
+              <div id="link-to-copy" class="adress--txt">TTcWpoLDzBFDwH6W4fpYCCtAemBv2SZHNv</div>
+              <div class="adress-hider"></div>
+            </div>
+            <div class="adress-right">
+              <a data-clipboard-text="TTcWpoLDzBFDwH6W4fpYCCtAemBv2SZHNv" href="#" class="cta-copy w-inline-block" onclick="myFunction()"><img src="images/ico-copy.svg" loading="eager" alt="" class="cta-btn--ico copy">
+                <div class="cta-btn__txt" onclick="myFunction()">Copy to Clipboard</div>
+                <div class="cta-btn-transparent__gradhide dark"></div>
+                <div class="cta-btn-transparent__gradhide-red"></div>
+                <div class="cta-btn-transparent__animbox"></div>
+                <div class="cta-copied-box">
+                  <div class="cta-copied-txt"><strong>Copied</strong></div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-    <style>
-      .adress-left{
-          position: relative;
-          padding: 10px;
-          border-radius: 10px;
-          display: flex;
-          background: black;
-          border: 1px solid black;
-      }
-      .adress-left input.text{
-          padding: 10px;
-          font-size: 18px;
-          border: none;
-          outline: none;
-          background-color: black;
-          color: white;
-      }
-      .adress-right .toottip button{
-          padding: 10px;
-          background: black;
-          color: rgb(64,92,244);
-          font-size: 18px;
-          border-color: rgb(64,92,244);
-          outline: none;
-          border-radius: 10px;
-          cursor: pointer;
-      }
-      .adress-right .toottip button:hover{
-        background-color: rgb(64,92,244);
-        color: white;
-        text-decoration: none;
-      }
-      .adress-right .toottip button:before {
-          content:"copied";
-          position:absolute;
-          top: -50px;
-          right: 0px;
-          background: #5c81dc;
-          padding: 8px 10px;
-          border-radius: 20px;
-          font-size: 15px;
-          display: none;
-      }
-      .adress-right .toottip button:after {
-          content: "";
-          position: absolute;
-          top: -20px;
-          right: 25px;
-          width: 10px;
-          height: 10px;
-          background: #5c81dc;
-          transform: rotate(45deg);
-          display: none;
-          text-decoration: none;
-      }
-      .adress-right.active button:before,
-      .adress-right.active button:after{
-          display: block;
-      }
-  </style>
-   <script>
-    function myFunction() {
-      var copyText = document.getElementById("myInput");
-      copyText.setSelectionRange(0, 99999);
-      navigator.clipboard.writeText(copyText.value);
-      
-      var tooltip = document.getElementById("myTooltip");
-      tooltip.innerHTML = "Copied";
-    }
-    
-    function outFunc() {
-      var tooltip = document.getElementById("myTooltip");
-      tooltip.innerHTML = "Copy to clipboard";
-    }
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+        <script>
+          var clipboard = new Clipboard(".cta-copy");
+          clipboard.on("success", function(o) {
+            console.log(o), $(".result-div").click()
+          }), clipboard.on("error", function(o) {
+            console.log(o)
+          });
+        </script>
+    </div>
+  </section>
   <section class="bg-dark pb-0">
     <div class="container">
       <div class="row text-center justify-content-center">
@@ -569,6 +508,7 @@
 <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="assets/js/zoom.min.js"></script>
 <script type="text/javascript" src="assets/js/aos.js"></script>
+<script type="text/javascript" src="assets/js/shiba-ui.js"></script>
   <!-- Hero animation -->
 <script type="text/javascript" src="assets/js/custom.js"></script>
 <script>
