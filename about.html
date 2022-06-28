@@ -271,22 +271,9 @@
     <span class="h3 d-block mr-md-3 mb-md-0 text-center" style="padding-bottom: 80px;">The Supporters</span>
     <div class="text-area">
       <div class="row  mb-4">
-        <div class="col-6 col-md-3 col-lg-4 mb-4">
+        <div class="col-6 col-md-3 col-lg-3 mb-4">
           <div class="single-team">
-            <img src="assets/About img/Supporters/pic1.jpg" width="250px">
-            <div class="team-text">
-              <h2 class="text-white">Jessica Daun</h2>
-              <p class="text-white">Web Developer</p>
-              <p>
-                <a href="#"><i class="fa-brands fa-2x fa-twitter" style="color: #fff;"></i></a>
-                <a href="#"><i class="fa-brands fa-2x fa-telegram" style="color: #fff;"></i></a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3 col-lg-4 mb-4">
-          <div class="single-team">
-            <img src="assets/About img/Supporters/pic2.jpg" width="250px">
+            <img src="assets/About img/Supporters/pic1.jpg" width="100%">
             <div class="team-text">
               <h2 class="text-white">Jerry</h2>
               <p class="text-white">Web Developer</p>
@@ -297,9 +284,22 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-3 col-lg-4 mb-4">
+        <div class="col-6 col-md-3 col-lg-3 mb-4">
           <div class="single-team">
-            <img src="assets/About img/Supporters/pic3.jpg" width="250px">
+            <img src="assets/About img/Supporters/pic2.jpg" width="100%">
+            <div class="team-text">
+              <h2 class="text-white">Jerry</h2>
+              <p class="text-white">Web Developer</p>
+              <p>
+                <a href="#"><i class="fa-brands fa-2x fa-twitter" style="color: #fff;"></i></a>
+                <a href="#"><i class="fa-brands fa-2x fa-telegram" style="color: #fff;"></i></a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3 mb-4">
+          <div class="single-team">
+            <img src="assets/About img/Supporters/pic3.jpg" width="100%">
             <div class="team-text">
               <h2 class="text-white">Yawn</h2>
               <p class="text-white">Web Developer</p>
@@ -310,9 +310,9 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-3 col-lg-4 mb-4">
+        <div class="col-6 col-md-3 col-lg-3 mb-4">
           <div class="single-team">
-            <img src="assets/About img/Supporters/pic4.jpg" width="250px">
+            <img src="assets/About img/Supporters/pic4.jpg" width="100%">
             <div class="team-text">
               <h2 class="text-white">Yawn</h2>
               <p class="text-white">Web Developer</p>
@@ -323,9 +323,9 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-3 col-lg-4 mb-4">
+        <div class="col-6 col-md-3 col-lg-3 mb-4">
           <div class="single-team">
-            <img src="assets/About img/Supporters/pic5.jpg" width="250px">
+            <img src="assets/About img/Supporters/pic5.jpg" width="100%">
             <div class="team-text">
               <h2 class="text-white">Yawn</h2>
               <p class="text-white">Web Developer</p>
@@ -336,9 +336,9 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-3 col-lg-4 mb-4">
+        <div class="col-6 col-md-3 col-lg-3 mb-4">
           <div class="single-team">
-            <img src="assets/About img/Supporters/pic6.jpg" width="250px">
+            <img src="assets/About img/Supporters/pic6.jpg" width="120%">
             <div class="team-text">
               <h2 class="text-white">Yawn</h2>
               <p class="text-white">Web Developer</p>
@@ -349,9 +349,9 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-3 col-lg-4 mb-4">
+        <div class="col-6 col-md-3 col-lg-3 mb-4">
           <div class="single-team">
-            <img src="assets/About img/Supporters/pic7.jpg" width="250px">
+            <img src="assets/About img/Supporters/pic7.jpg" width="100%">
             <div class="team-text">
               <h2 class="text-white">Yawn</h2>
               <p class="text-white">Web Developer</p>
@@ -378,10 +378,9 @@
         justify-content: space-around;
       }
       .str .single-team{
-        width: 350px;
-        height: 400px;
+        width: 250px;
+        height: 250px;
         padding: 20px;
-        background: #fff;
         position: relative;
         display: flex;
         align-items: flex-end;
@@ -394,7 +393,19 @@
       .str .single-team:hover::before{
         opacity: 1;
       }
-     
+      .str .single-team::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: black;
+        z-index: 2;
+        transition: 0.5s;
+        opacity: 0;
+      }
       .str .single-team::before{
         content: '';
         position: absolute;
@@ -408,8 +419,6 @@
         opacity: 0;
       }
       .str .single-team img{
-        width: 100%;
-        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
@@ -576,7 +585,6 @@
     </div>
   </div>
 </section>
-
 <section class="bg-white spacer-y-3">
   <div class="container">
     <div class="row justify-content-center">
@@ -681,12 +689,12 @@
             <li class="py-0 py-md-1"><a href="#" class="text-white">support@credx24.com</a></li>
           </ul>
           <div class="centerdiv">
-            <a href="https://www.facebook.com/CredXCoinOfficial" target="_blank"><i class="fa fa-facebook" style="color: white; font-size: 20px;"></i></a>
             <a href="https://www.instagram.com/credx_official/?hl=en" target="_blank"><i class="fa fa-2x fa-instagram" style="color: white; font-size: 20px;"></i></a>
             <a href="https://www.reddit.com/user/Credx_Blockchain/comments/v2et89/credx_blockchain_technology/" target="_blank"><i class="fa fa-2x fa-reddit" style="color: white; font-size: 20px;"></i></a>
             <a href="https://twitter.com/CREDX_" target="_blank"><i class="fa fa-2x fa-twitter" style="color: white; font-size: 20px;"></i></a>
             <a href="https://t.me/credx" target="_blank"><i class="fa fa-2x fa-telegram" style="color: white; font-size: 20px;"></i></a>
             <a href="https://github.com/Credx247/CREDXWEB.github.io" target="_blank"><i class="fa fa-2x fa-github" style="color: white; font-size: 20px;"></i></a>
+            <a href="https://www.facebook.com/CredXCoinOfficial" target="_blank"><i class="fa fa-facebook" style="color: white; font-size: 20px;"></i></a>
           </div>
         </div>
       </div>

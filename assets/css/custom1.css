@@ -8,7 +8,7 @@
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
-    --pink: #e83e8c;
+    --pink: rgb(64,92,244);
     --red: #dc3545;
     --orange: #fd7e14;
     --yellow: #ffc107;
@@ -507,7 +507,7 @@
   
   code {
     font-size: 87.5%;
-    color: #e83e8c;
+    color: rgb(64,92,244);
     word-break: break-word;
   }
   
